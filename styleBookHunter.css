@@ -2,7 +2,6 @@ body {
     background: #5b0581 url(background.jpg);
     background-size: 100%;
     background-attachment: fixed;
-    text-align: center;
     margin: 0;
 }
 
@@ -44,7 +43,7 @@ header {
 .cunteiner {
     width: 80%;
     margin: 0 auto;
-    padding: 110px;
+    padding: 100px;
 }
 
 
@@ -82,6 +81,7 @@ header {
     padding: 10px;
     background-color: rgba(89, 91, 91, 0.51);
     height: 200px;
+    text-align: center;
 }
 
 .inputWindow {
@@ -104,4 +104,7 @@ header {
 footer {
     background-color: #4f4d4d;
     height: 100px;
+    font-size: larger;
+    font-family: Courier;
+    padding: 0 0 0 20px;
 }

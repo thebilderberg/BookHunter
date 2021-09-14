@@ -2,13 +2,13 @@
 
 
 
-function enterUserText() {
-    let clickButtonFoot = document.querySelector('.buttonFoot');
+function enterUserText(buttonEnter, window, buttonKey) {
+    let clickButtonFoot = document.querySelector(buttonEnter);
     clickButtonFoot.addEventListener('click', () => {
-        let userText = document.querySelector('.inputWindow');
+        let userText = document.querySelector(window);
         if (userText.value === 'Достоевский') {
             alert('Отлично, вы получаете ключ!');
-            let buttonOneKey = document.querySelector('.buttonHeaderOne');
+            let buttonOneKey = document.querySelector(buttonKey);
             buttonOneKey.addEventListener('click', () => {
                 alert('Промокод на маленький хуй');
             });
@@ -21,4 +21,4 @@ function enterUserText() {
     });
 }
 
-enterUserText();
+enterUserText('.buttonFoot', '.inputWindow', '.buttonHeaderOne');
