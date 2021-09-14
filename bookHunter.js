@@ -8,6 +8,8 @@ function enterUserText(buttonEnter, window, buttonKeyOne, buttonKeyTwo, buttonKe
         let userText = document.querySelector(window);
         if (userText.value === 'Достоевский') {
             alert('Отлично, вы получаете ключ!');
+
+
             let buttonOneKey = document.querySelector(buttonKeyOne);
             buttonOneKey.addEventListener('click', () => {
                 alert('Промокод на маленький хуй');
@@ -22,11 +24,15 @@ function enterUserText(buttonEnter, window, buttonKeyOne, buttonKeyTwo, buttonKe
             buttonThreeKey.addEventListener('click', () => {
                 alert('Промокод на пельмень');
             });
+
+
         } else if (userText.value === ''){
             alert('Нужно что-то ввести, чел!');
         } else {
             alert('Нет! Тебе стоит подучить русскую литературу, малой!')
         }
+
+
         userText.value = '';
     });
 }
