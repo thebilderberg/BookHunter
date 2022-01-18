@@ -6,23 +6,23 @@ function enterUserText(buttonEnter, window, buttonKeyOne, buttonKeyTwo, buttonKe
     let clickButtonFoot = document.querySelector(buttonEnter);
     clickButtonFoot.addEventListener('click', () => {
         let userText = document.querySelector(window);
-        if (userText.value === 'Достоевский') {
+        if (userText.value === 'Булгаков') {
             alert('Отлично, вы получаете ключ!');
 
 
             let buttonOneKey = document.querySelector(buttonKeyOne);
             buttonOneKey.addEventListener('click', () => {
-                alert('Промокод на маленький хуй');
+                alert('Промокод IVI');
             });
 
             let buttonTwoKey = document.querySelector(buttonKeyTwo);
             buttonTwoKey.addEventListener('click', () => {
-                alert('Промокод на огурец');
+                alert('Промокод OKKO');
             });
 
             let buttonThreeKey = document.querySelector(buttonKeyThree);
             buttonThreeKey.addEventListener('click', () => {
-                alert('Промокод на пельмень');
+                alert('Промокод KINOPOISK');
             });
 
 
